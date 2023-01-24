@@ -1,0 +1,9 @@
+# First, create a new Linux group which has permission to use promiscuous mode, and add yourself to the group.
+$ groupadd promiscuous
+$ usermod -a -G promiscuous <your_user_id>
+
+# Update the group ownership and access permission of /dev/vmnet*
+$ chgrp promiscuous /dev/vmnet*
+$ chmod g+rw /dev/vmnet*
+
+Restart VM
