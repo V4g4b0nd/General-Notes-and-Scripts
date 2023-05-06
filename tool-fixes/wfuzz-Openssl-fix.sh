@@ -3,7 +3,7 @@
 # Fixing Warning: Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites
 
 #need apt, pip and python
-
+#donot forgot to chmod the file, chmod +x wfuzz-Openssl-fix.sh
 sudo apt update
 sudo apt-get install python3-pip
 
