@@ -11,7 +11,7 @@ sudo apt-get install python3-pip
 # remove the whole installed wfuzz and pycurl
 sudo apt --purge remove python3-pycurl  
 sudo apt-get purge wfuzz    
-sudo pip uninstall wfuzz -y
+sudo pip3 uninstall wfuzz -y
 #install the delow libraries
 
 sudo apt install libcurl4-gnutls-dev librtmp-dev  -y   
@@ -19,7 +19,7 @@ sudo apt install libcurl4-openssl-dev libssl-dev -y
 
 #install the wfuzz from pip
 
-sudo pip install wfuzz
+sudo pip3 install wfuzz
 
 #run wfuzz in terminal and we won't get the Openssl warning
 
